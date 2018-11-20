@@ -10,6 +10,19 @@
 </head>
 
 <body>
+  <svg style="display: none">
+    <defs>
+      <symbol id="add>
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+      </symbol>
+      <symbol id="favorite">
+        <path d=" M12
+        21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3
+        19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+      </symbol>
+    </defs>
+  </svg>
+
   <header class="banner">
     <div class="global-header">
       <div class="content-wrapper">
@@ -31,9 +44,11 @@
           </ul>
         </nav>
       </div>
-      <div class="masthead">
+    </div>
+    <div class="masthead">
+      <div class="content-wrapper">
         <h1>Get inspired. Create your bucket list. Share.</h1>
-        <form class="masthead__search input" action="ideas" method="get">
+        <form class="masthead__search input" class="search" action="ideas" method="get">
           <label class="input__label" for="cta-search-input">Inspire me</label>
           <div class="input__row">
             <input class="input__field" id="cta-search-input" type="text" name="search" placeholder="e.g. Driving a race car." />
@@ -58,8 +73,19 @@
             </div>
           </a>
           <form class="card__footer" action="idea" method="post">
-            <button class="btn btn--like" type="submit" name="action" value="like">Like</button>
-            <button class="btn btn--add" type="submit" name="action" value="addGoal">Add goal</button>
+            <button class="btn btn--like" type="submit" name="action" value="like">
+              <svg class="icon icon--liked" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                <use xlink:href="#favorite"></use>
+              </svg>
+              Liked
+            </button>
+            <button class="btn btn--add" type="submit" name="action" value="addGoal">
+              <svg class="icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                <use xlink:href="
+                #add"></use>
+              </svg>
+              Add goal
+            </button>
           </form>
         </li>
         <li class="card">
@@ -72,36 +98,69 @@
             </div>
           </a>
           <form class="card__footer" action="idea" method="post">
-            <button class="btn btn--like" type="submit" name="action" value="like">Like</button>
-            <button class="btn btn--add" type="submit" name="action" value="addGoal">Add goal</button>
+            <button class="btn btn--like" type="submit" name="action" value="like">
+              <svg class="icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                <use xlink:href="#favorite"></use>
+              </svg>
+              Like
+            </button>
+            <button class="btn btn--add" type="submit" name="action" value="addGoal">
+              <svg class="icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                <use xlink:href="
+                    #add"></use>
+              </svg>
+              Add goal
+            </button>
           </form>
         </li>
         <li class="card">
           <a href="ideas/swim-with-dolphins.html">
             <img src="./assets/images/dolphins-small.jpg" alt="Swimming with dolphins" srcset="./assets/images/dolphins-small.jpg 300w,
             ./assets/images/dolphins-large.jpg 600w" />
-            <div>
-              <h3>Swim with dolphins.</h3>
+            <div class="card__intro">
+              <h3 class="card__title">Swim with dolphins.</h3>
               <span>1254 people are doing this</span>
             </div>
           </a>
-          <form action="idea" method="post">
-            <button class="btn btn--like" type="submit" name="action" value="like">Like</button>
-            <button class="btn btn--add" type="submit" name="action" value="addGoal">Add goal</button>
+          <form class="card__footer" action="idea" method="post">
+            <button class="btn btn--like" type="submit" name="action" value="like">
+              <svg class="icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                <use xlink:href="#favorite"></use>
+              </svg>
+              Like
+            </button>
+            <button class="btn btn--add" type="submit" name="action" value="addGoal">
+              <svg class="icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                <use xlink:href="
+                    #add"></use>
+              </svg>
+              Add goal
+            </button>
           </form>
         </li>
         <li class="card">
           <a href="dancing.html">
             <img src="./assets/images/dancing-small.jpg" alt="Dancing like nobody's watching" srcset="./assets/images/dancing-small.jpg 300w,
                     ./assets/images/dancing-large.jpg 600w" />
-            <div>
-              <h3>Dance like nobody's watching.</h3>
+            <div class="card__intro">
+              <h3 class="card__title">Dance like nobody's watching.</h3>
               <span>1254 people are doing this</span>
             </div>
           </a>
-          <form action="idea" method="post">
-            <button class="btn btn--like" type="submit" name="action" value="like">Like</button>
-            <button class="btn btn--add" type="submit" name="action" value="addGoal">Add goal</button>
+          <form class="card__footer" action="idea" method="post">
+            <button class="btn btn--like" type="submit" name="action" value="like">
+              <svg class="icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                <use xlink:href="#favorite"></use>
+              </svg>
+              Like
+            </button>
+            <button class="btn btn--add" type="submit" name="action" value="addGoal">
+              <svg class="icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                <use xlink:href="
+                    #add"></use>
+              </svg>
+              Add goal
+            </button>
           </form>
         </li>
       </ul>
