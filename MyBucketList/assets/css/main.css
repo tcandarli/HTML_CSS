@@ -190,8 +190,13 @@ h6,
 * ------------------------------ */
 
 .global-header .content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -203,6 +208,8 @@ h6,
 .global-header .search {
     float: left;
     margin: 0 1.6em -1px 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
     flex: 1 0 auto;
 }
 
@@ -246,6 +253,7 @@ h6,
 
     background: #fff;
     padding: 0;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     border-radius: 3px;
 }
@@ -280,7 +288,7 @@ h6,
 
 
 /* -------------------------------
-* Footer 
+* Footer
 * ------------------------------- */
 .global-footer {
     background-color: #192127;
@@ -323,12 +331,22 @@ h6,
  ============================================= */
 
 .card {
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.14);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.14);
     margin: 0 1.6rem 1.6rem 0;
     border-radius: 3px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     font-size: 1rem;
 }
@@ -337,6 +355,7 @@ h6,
     position: relative;
     text-decoration: none;
     color: #fff;
+    display: block;
 }
 
 .card__intro {
@@ -372,6 +391,8 @@ h6,
 * ------------------------------------------ */
 
 .card__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border-top: 1px solid #bbc1c6;
 }
@@ -383,6 +404,8 @@ h6,
 
 .card__footer .btn--like {
     border-right: 1px solid #bbc1c6;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
     flex: 1 0 auto;
     text-align: left;
 
@@ -393,7 +416,10 @@ h6,
 * --------------------------------------------- */
 
 .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
 }
@@ -433,7 +459,11 @@ body {
     text-transform: uppercase;
 
     cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -522,6 +552,8 @@ body {
 }
 
 .input__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -531,6 +563,8 @@ body {
 }
 
 .input__row .input__field {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 10em;
     flex: 1 0 10em;
 
 }
